@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'ohtu.Main'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ohtu.Main'
+    }
+}
+
+repositories {
+	
+}
+
+dependencies {
+>compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.3
+}
